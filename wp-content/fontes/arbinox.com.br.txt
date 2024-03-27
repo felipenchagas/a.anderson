@@ -1,0 +1,59 @@
+;;
+;; Domain:     andaludigital.com.br.
+;; Exported:   2024-03-27 18:45:01
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+andaludigital.com.br	3600	IN	SOA	elle.ns.cloudflare.com. dns.cloudflare.com. 2046323170 10000 2400 604800 3600
+
+;; NS Records
+andaludigital.com.br.	86400	IN	NS	elle.ns.cloudflare.com.
+andaludigital.com.br.	86400	IN	NS	jack.ns.cloudflare.com.
+
+;; A Records
+andaludigital.com.br.	1	IN	A	185.199.111.153
+andaludigital.com.br.	1	IN	A	185.199.110.153
+andaludigital.com.br.	1	IN	A	185.199.109.153
+andaludigital.com.br.	1	IN	A	185.199.108.153
+
+;; CNAME Records
+curitiba.andaludigital.com.br.	1	IN	CNAME	andaludigital.com.br.
+em623046.andaludigital.com.br.	1	IN	CNAME	return.smtp2go.net.
+link.andaludigital.com.br.	1	IN	CNAME	track.smtp2go.net.
+s623046._domainkey.andaludigital.com.br.	1	IN	CNAME	dkim.smtp2go.net.
+webmail.andaludigital.com.br.	1	IN	CNAME	andaludigital.com.br.
+www.andaludigital.com.br.	1	IN	CNAME	felipenchagas.github.io.
+
+;; MX Records
+andaludigital.com.br.	1	IN	MX	37 route3.mx.cloudflare.net.
+andaludigital.com.br.	1	IN	MX	82 route2.mx.cloudflare.net.
+andaludigital.com.br.	1	IN	MX	89 route1.mx.cloudflare.net.
+
+;; TXT Records
+_acme-challenge.andaludigital.com.br.	1	IN	TXT	"rf2tznJCTZJJjx4zSvFm6DmZze4wdck2otUtNTlo2XM"
+andaludigital.com.br.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
+andaludigital.com.br.	3600	IN	TXT	"google-site-verification=u9FLV5uepIRiJtPBqLpoxgA6-a_p96xP75WPzCx2lUk"
+_cpanel-dcv-test-record.andaludigital.com.br.	1	IN	TXT	"_cpanel-dcv-test-record=R_euAA21P5h_zCgulWvPGSNnHoedZBXJhlclmK16avHCQa4M5swJNhTPs_vJOHyA"
+default._domainkey.andaludigital.com.br.	1	IN	TXT	"v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1qh7D70ySNCR4R1h/n7Q1QvtNLNFcvJchtDfOxGD+xO4ebIlxCasegP8H0kxbUU3ERbwZjC9Qwq/Ng+MfkQfObHM5+uUFa9WEaZf33nmLDH53bRFi0c+zIUny4W9jtEe1zCyGFow9clieKldAZHfXLZqR3bmIloFfblvC4DTrFIlFncfDQtKxfBvpCQKTigHB" "ZyE2uCHzIoWzQjYQzLyWWg8/TbtMo7vz4v8lYBqSGjWn1Qgg6CKeIC4E7stYcdpwo3gwG17sOoq8K/D9FHxMkIqBI+aZ/czkmlDwHDdOu5aybR1/d3sopgvOtLsIb4+hEjMBbgm8GRDWjs8IojnUQIDAQAB;"
+_dmarc.andaludigital.com.br.	1	IN	TXT	"v=DMARC1; p=quarantine; rua=mailto:felipe@empresarialweb.com.br"
+_dmarc.andaludigital.com.br.	1	IN	TXT	"v=DMARC1; p=quarantine; sp=none; pct=100; ri=86400; rua=mailto:5f59a7ebfb1644c5b52b580a57d6b8da@dmarc-reports.cloudflare.net;"
