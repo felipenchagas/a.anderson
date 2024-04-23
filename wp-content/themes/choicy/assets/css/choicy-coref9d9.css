@@ -1780,9 +1780,8 @@ input:focus::placeholder, textarea:focus::placeholder {
   transition: 400ms ease;
 }
 .chy-cart-btn-1::after {
-  content: "2";
-  width: 26px;
-  height: 26px;
+  content: "andalustore";
+ 
   background: var(--chy-gd-1);
   position: absolute;
   top: -30px;
